@@ -332,11 +332,6 @@ ul#screenshots li {
     padding: 4px;
 }
 
-ul#screenshots::after {
-    content: '';
-    clear: both;
-}
-
 #main_content_wrap {
   background: #f2f2f2;
   border-top: 1px solid #111;
