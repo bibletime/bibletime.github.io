@@ -133,6 +133,7 @@ strong {
   font-weight: bold;
 }
 
+/*
 img {
   position: relative;
   margin: 0 auto;
@@ -156,6 +157,7 @@ p img {
   text-align: center;
   border: none;
 }
+*/
 
 pre, code {
   width: 100%;
@@ -266,7 +268,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 1024px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -321,6 +323,18 @@ Full-Width Styles
   background: url('../images/bibletime_logo.png') no-repeat;
   float: left;
   padding-right: 10px;
+}
+
+ul#screenshots li {
+    display: inline-block;
+    vertical-align: middle;
+    list-style: none;
+    padding: 4px;
+}
+
+ul#screenshots::after {
+    content: '';
+    clear: both;
 }
 
 #main_content_wrap {

@@ -8,9 +8,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/bibletime.css">
-
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="javascripts/bibletime.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/lightbox.css">
 
     <title>BibleTime</title>
 </head>
@@ -220,9 +218,23 @@
     <a id="screenshots" class="anchor" href="#screenshots" aria-hidden="true"><span class="octicon octicon-link"></span></a>
     Screenshots
 </h3>
-<p>
-    Something for the eyes...
-</p>
+<ul id="screenshots">
+    <li>
+        <a href="screenshots/BibleTime-Main-Screen.png" data-lightbox="screenshots" data-title="BibleTime's main screen">
+            <img src="screenshots/BibleTime-Main-Screen-Small.png" />
+        </a>
+    </li>
+    <li>
+        <a href="screenshots/BibleTime-Bookshelf-Manager.png" data-lightbox="screenshots" data-title="BibleTime's bookshelf manager">
+            <img src="screenshots/BibleTime-Bookshelf-Manager-Small.png" />
+        </a>
+    </li>
+    <li>
+        <a href="screenshots/BibleTime-Search-Screen.png" data-lightbox="screenshots" data-title="BibleTime's search screen">
+            <img src="screenshots/BibleTime-Search-Screen-Small.png" />
+        </a>
+    </li>
+</ul>
 
 
 <h3>
@@ -270,6 +282,10 @@
         <p class="copyright">© 2015 <a href="https://github.com/bibletime">BibleTime team</a></p>
       </footer>
     </div>
+
+    <script src="javascripts/jquery-2.1.4.min.js"></script>
+    <script src="javascripts/bibletime.js"></script>
+    <script src="javascripts/lightbox.js"></script>
 
     <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
