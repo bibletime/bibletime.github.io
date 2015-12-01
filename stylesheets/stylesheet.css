@@ -325,6 +325,24 @@ Full-Width Styles
   padding-right: 10px;
 }
 
+h1:hover,
+article:hover h1,
+h2:hover,
+article:hover h2,
+h3:hover,
+article:hover h3,
+h4:hover,
+article:hover h4,
+h5:hover,
+article:hover h5,
+h6:hover,
+article:hover h6,
+header:hover h1,
+header:hover h2 {
+    color: #0090ff !important;
+    text-shadow: 0 0 2px #0090ff !important;
+}
+
 ul#screenshots li {
     display: inline-block;
     vertical-align: top;
@@ -335,6 +353,7 @@ ul#screenshots li {
 }
 
 ul#screenshots li:hover {
+    box-shadow: 0 0 1px #0090ff !important;
     border-color: #0090ff;
 }
 #main_content_wrap {
