@@ -84,6 +84,32 @@
 </h3>
 
 <article>
+    <div class="date">2018-10-31</div>
+    <h5>
+        BibleTime not working on Ubuntu 18.10 and others.
+    </h5>
+    <p>BibleTime 2.11.1 is not compatible with Qt 5.11. This combination was released with Ubuntu 18.10. The problem was fixed
+      in BibleTime 2.11.2. It is possible to install BibleTime 2.11.2 as a flatpak.
+    </p>
+
+    <p><a class="ReadMore" href="#">Read more…</a></p>
+
+    <div class="hidden">
+        <p>
+          This flatpak is available at <a href="https://flathub.org/apps/details/info.bibletime.BibleTime"> flathub.org</a>. Be sure to
+          follow the "setup guide" before installing BibleTime. This flatpak works on numerous operating systems. See the "setup guide"
+          for more details.
+        </p>
+        <p>
+          NOTE: This flatpak of BibleTime runs in a confined filespace. It will not find your $HOME/.bibletime or $HOME/.sword directories.
+          It will use the $HOME/.var/app/info.bibletime.BibleTime directory to find .bibletime and .sword. It is possible to move your current .bibletime
+          and .sword to this directory and then make a symbolic link to $HOME/.bibletime and $HOME/.sword. 
+        </p>
+        <p>On behalf of the BibleTime team,<br />Gary Holmlund</p>
+    </div>
+</article>
+
+<article>
     <div class="date">2018-06-18</div>
     <h5>
         BibleTime 2.11.2 Released
