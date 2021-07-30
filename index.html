@@ -84,6 +84,63 @@
 </h3>
 
 <article>
+    <div class="date">2021-07-30</div>
+    <h5>
+        BibleTime 3.0.1 released
+    </h5>
+    <p>The BibleTime team is proud to announce the immediate availability of BibleTime version 3.0.1 which is the first bugfix release in the stable 3.0 series of BibleTime.</p>
+
+    <p><a class="ReadMore" href="#">Read more…</a></p>
+
+    <div class="hidden">
+        <p>All users of BibleTime are encouraged to upgrade, especially users still using BibleTime version 2.11.2 or earlier.</p>
+
+        <h6>Notable changes since version 3.0:</h6>
+
+        <ul>
+            <li>Improved tuning of scrolling speed.</li>
+            <li>Improved handling of fonts to fix many bugs, including a switch to Qt's native font chooser widget in settings dialog, because of many serious bugs in our legacy implementation.</li>
+            <li>Improved sample text in settings dialog.</li>
+            <li>Improved behavior of the mag view to be more similar to pre-3.0 behavior.</li>
+            <li>Increased maximum column count from 4 to 10.</li>
+            <li>Removed the orphaned and broken tests for BibleTime.</li>
+            <li>Updated translations, including a new user interface translations to Japanese and Ukrainian, a new Handbook translation to Russian, and a new Howto translation to Ukrainian.</li>
+            <li>Fixed DisplayView.qml getting incorrectly installed under /usr/bin/ on some platforms.</li>
+            <li>Fixed some compatibility issues with different Qt versions.</li>
+            <li>Fixed a crash when editing personal commentary.</li>
+            <li>Fixed highlighting of selected text.</li>
+            <li>Fixed dragging of links.</li>
+            <li>Fixed modules rearranging themselves.</li>
+            <li>Fixed logic related to clicking on verse numbers.</li>
+            <li>Fixed custom font of first column being incorrectly applied to all columns.</li>
+            <li>Fixed preview in settings dialog displaying text in red.</li>
+            <li>Fixed lexicons not being displayed.</li>
+            <li>Fixed drag and drop in mag view and search dialog.</li>
+            <li>Fixed no text being displayed for some ThML modules.</li>
+            <li>Fixed undefined behavior and crashes from opening menus to select works by working around a broken QMenu interface (<a href="https://bugreports.qt.io/browse/QTBUG-77273">QTBUG-77273</a>).</li>
+            <li>Fixes to handling of languages, including a caching discrepancy which caused some settings not being properly applied before restarting BibleTime.</li>
+            <li>Fixed saving of chapters not working properly.</li>
+            <li>Fixed handling of nested <note> tags for OSIS works.</li>
+            <li>Fixes to handling of PageUp/PageDown keys when scrolling out of bounds. Note that when BibleTime is compiled against Qt 5.9, one might still experience a trivial glitch where only part of the module is displayed. Pressing PageUp/PageDown again may help to work around this.</li>
+        </ul>
+
+        <p>Source code and binaries for BibleTime 3.0.1 can be found <a href="https://github.com/bibletime/bibletime/releases/tag/v3.0.1">here</a>.</p>
+
+        <p>Details of <a href="https://github.com/bibletime/bibletime/releases/download/v3.0.1/bibletime-3.0.1.tar.xz">bibletime-3.0.1.tar.xz</a>:</p>
+        <ul>
+            <li>File size: 1630180 bytes (1.55 MB)</li>
+            <li>MD5SUM: fb20bfefe40204296aaaadb43ebf4838</li>
+            <li>SHA1SUM: 649c1f6baedefdc708a12a3a25d71a213263f08c</li>
+            <li>SHA256SUM: 6b2e28f267e08ff9b7041a01317560c3435395a160250bcb94d62f1194574a20</li>
+        </ul>
+
+        <p>Glory be to God and thanks to everyone who contributed to this release!</p>
+
+        <p>With best regards, and on behalf of the BibleTime team,<br />Jaak Ristioja</p>
+    </div>
+</article>
+
+<article>
     <div class="date">2020-08-02</div>
     <h5>
         BibleTime 3.0 released
