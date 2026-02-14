@@ -84,6 +84,74 @@
 </h3>
 
 <article>
+    <div class="date">2026-02-14</div>
+    <h5>
+        BibleTime 3.2.0 release candidate 1
+    </h5>
+    <p>The BibleTime Team is pleased to announce the availability of BibleTime 3.2.0 release candidate 1. This update includes improvements to usability, performance and code.</p>
+
+    <p><a class="ReadMore" href="#">Read more…</a></p>
+
+    <div class="hidden">
+        <p><strong>Key changes:</strong></p>
+        <ul>
+            <li>Added basic Text-to-Speech (TTS) for selected text, accessible via the context menu and configurable in the Settings. Requires the Qt TextToSpeech module and a compatible TTS engine to be installed. Can be disabled at build time.</li>
+            <li>Added option to search works open in the active window, now the default action for <kbd>Ctrl</kbd>+<kbd>O</kbd>.</li>
+            <li>Improved dark theme detection.</li>
+            <li>Dropped support for macOS.</li>
+        </ul>
+
+        <p><strong>Updated build requirements:</strong></p>
+        <ul>
+            <li>Minimum Qt version bumped to 6.7 (and must be compiled with ICU support).</li>
+            <li>Minimum CMake version bumped to 3.25.</li>
+            <li>pkg-config (or pkgconf) is now required.</li>
+        </ul>
+
+        <p><strong>Bugfixes:</strong></p>
+        <ul>
+            <li>Resolved a critical issue that was causing startup crashes and high memory usage when loading legacy configuration file from Qt5-based BibleTime versions.</li>
+            <li>Fixed compilation against Sword 1.8.1.</li>
+            <li>Prevent offering to copy when no text is selected.</li>
+            <li>Fixed the saving of states of docking windows.</li>
+            <li>Fixed cross-references always displaying Rev 1:1.</li>
+            <li>Fixed missing module grouping in some module chooser menus.</li>
+            <li>Fixed "change location" shortcut not working when the target widget is already focused.</li>
+            <li>Cleared a number of debug warnings.</li>
+            <li>Removed a potential assertion triggered by the "Manage indexes" button.</li>
+            <li>Fixed a number of hyperlink click handling issues.</li>
+            <li>Corrected context menu placement in the search results area.</li>
+            <li>Correctly disable history buttons at initialization.</li>
+            <li>Ensure the initial location is included in the history list.</li>
+        </ul>
+
+        <p><strong>Downloads:</strong></p>
+
+        <p>Downloads for BibleTime 3.2.0 RC 1 can be found on the <a href="https://github.com/bibletime/bibletime/releases/tag/v3.2.0_rc1">official release page on GitHub</a>.</p>
+
+        <p>Details of <a href="https://github.com/bibletime/bibletime/releases/download/v3.2.0_rc1/bibletime-3.2.0_rc1.tar.xz">bibletime-3.2.0_rc1.tar.xz</a> (<a href="https://github.com/bibletime/bibletime/releases/download/v3.2.0_rc1/bibletime-3.2.0_rc1.tar.xz.asc">GPG signature</a>):</p>
+        <ul>
+            <li><strong>File size:</strong> 1308708 bytes (1.25 MB)</li>
+            <li><strong>MD5SUM:</strong> 7af545e262d98226c138c81e6d1aad78</li>
+            <li><strong>SHA1SUM:</strong> 31da66befcc7fe4c67e6ce09db3c7ac325b57dba</li>
+            <li><strong>SHA256SUM:</strong> 99675c6e76c2414f6bd72716d40ef534f3810e546c3d29ab64ee71ff99b4b3f7</li>
+        </ul>
+
+        <p>Details of <a href="https://github.com/bibletime/bibletime/releases/download/v3.2.0_rc1/bibletime-3.2.0_rc1.tar.lz">bibletime-3.2.0_rc1.tar.lz</a> (<a href="https://github.com/bibletime/bibletime/releases/download/v3.2.0_rc1/bibletime-3.2.0_rc1.tar.lz.asc">GPG signature</a>):</p>
+        <ul>
+            <li><strong>File size:</strong> 1306007 bytes (1.25 MB)</li>
+            <li><strong>MD5SUM:</strong> a1aee621a2ec4df45df427bf8014f3d4</li>
+            <li><strong>SHA1SUM:</strong> 5a0a298248f6327ce7e4b5b9c6ba40807f2b9d36</li>
+            <li><strong>SHA256SUM:</strong> 49074833acb175f0988160a21a73f178d808eb405a0ed190b90f2925881a8c7f</li>
+        </ul>
+
+        <p>To God be the glory, and our sincere thanks to all contributors.</p>
+
+        <p>With best regards,<br/>Jaak Ristioja, on behalf of the BibleTime team</p>
+    </div>
+</article>
+
+<article>
     <div class="date">2025-03-21</div>
     <h5>
         BibleTime 3.1.1 released
