@@ -1,5 +1,5 @@
 /*******************************************************************************
-Slate Theme for GitHub Pages
+Based on Slate Theme for GitHub Pages
 by Jason Costello, @jsncostello
 *******************************************************************************/
 
@@ -59,7 +59,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 10px 0;
   font-weight: 700;
   color:#222222;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
@@ -118,7 +117,31 @@ a {
   -ms-transition: text-shadow 0.5s ease;
 }
 
-a:hover, a:focus {text-decoration: underline;}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+h1 a, h1 a:hover, h1 a:focus,
+h2 a, h2 a:hover, h2 a:focus,
+h3 a, h3 a:hover, h3 a:focus,
+h4 a, h4 a:hover, h4 a:focus,
+h5 a, h5 a:hover, h5 a:focus,
+h6 a, h6 a:hover, h6 a:focus
+{
+  color: #222222;
+  text-decoration: none;
+}
+
+h1 a:hover::after, h1 a:focus::after,
+h2 a:hover::after, h2 a:focus::after,
+h3 a:hover::after, h3 a:focus::after,
+h4 a:hover::after, h4 a:focus::after,
+h5 a:hover::after, h5 a:focus::after,
+h6 a:hover::after, h6 a:focus::after
+{
+  content: " \00b6";
+  color: #cccccc;
+}
 
 footer a {
   color: #F2F2F2;
@@ -269,23 +292,8 @@ Full-Width Styles
 .inner {
   position: relative;
   max-width: 1024px;
-  padding: 20px 10px;
+  padding: 1em 0 0;
   margin: 0 auto;
-}
-
-#forkme_banner {
-  display: block;
-  position: absolute;
-  top:0;
-  right: 10px;
-  z-index: 10;
-  padding: 10px 50px 10px 10px;
-  color: #fff;
-  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
-  font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
 }
 
 #header_wrap {
@@ -298,7 +306,7 @@ Full-Width Styles
 }
 
 #header_wrap .inner {
-  padding: 50px 10px 30px 10px;
+  padding: 2em 0 .5em;
 }
 
 #project_title {
@@ -325,45 +333,25 @@ Full-Width Styles
   padding-right: 10px;
 }
 
-h1:hover,
-article:hover h1,
-h2:hover,
-article:hover h2,
-h3:hover,
-article:hover h3,
-h4:hover,
-article:hover h4,
-h5:hover,
-article:hover h5,
-h6:hover,
-article:hover h6,
-header:hover h1,
-header:hover h2 {
-    color: #0090ff !important;
-    text-shadow: 0 0 2px #0090ff !important;
+#screenshots > div {
+  margin: .5em;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 1em;
 }
 
-ul#screenshots li {
-    display: inline-block;
-    vertical-align: top;
-    list-style: none;
-    padding: 4px;
-    border: 2px solid white;
-    border-radius: 4px;
+#screenshots > div > * {
+  box-shadow: .02em .02em .17em .0em #222222;
 }
 
-ul#screenshots li:hover {
-    box-shadow: 0 0 1px #0090ff !important;
-    border-color: #0090ff;
-}
 #main_content_wrap {
   background: #f2f2f2;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
-}
-
-#main_content {
-  padding-top: 40px;
 }
 
 #footer_wrap {
